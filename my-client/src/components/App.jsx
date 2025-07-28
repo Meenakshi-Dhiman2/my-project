@@ -28,6 +28,9 @@ function App() {
         <Route path="/Findall" element={<Findall/>} />
 
       </Routes>
+      <footer>
+        <p>© 2025 Made By Meenakshi</p>
+      </footer>
        
     </div>
   );
