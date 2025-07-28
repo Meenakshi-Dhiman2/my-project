@@ -1,10 +1,10 @@
-/* App.css */
-
+/* Base styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f0f4f8;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .main-container {
@@ -15,6 +15,8 @@ body {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 h2 {
@@ -32,6 +34,8 @@ nav {
   background-color: #e8f3fb;
   padding: 15px;
   border-radius: 10px;
+  word-break: break-word;
+  text-align: center;
 }
 
 nav a {
@@ -43,6 +47,7 @@ nav a {
   border-radius: 6px;
   transition: background 0.3s, color 0.3s;
   border: 1px solid #3498db;
+  white-space: nowrap;
 }
 
 nav a:hover {
@@ -65,6 +70,7 @@ nav a.active {
   max-width: 500px;
   margin: auto;
   text-align: left;
+  box-sizing: border-box;
 }
 
 .Add-container h1 {
@@ -75,13 +81,15 @@ nav a.active {
 
 /* Form styling */
 .Add-container form input[type="text"],
-.Add-container form input[type="salary"] {
+.Add-container form input[type="salary"],
+.Add-container form input[type="number"] {
   width: 100%;
   padding: 12px 15px;
   margin-bottom: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 15px;
+  box-sizing: border-box;
 }
 
 .Add-container form input[type="submit"] {
@@ -111,24 +119,55 @@ footer {
   margin-top: 40px;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+/* Responsive styles */
+@media (max-width: 768px) {
   .main-container {
-    padding: 15px;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .Add-container {
+    padding: 20px;
   }
 
   nav {
     flex-direction: column;
     align-items: center;
+    gap: 8px;
   }
 
   nav a {
     width: 100%;
+    max-width: 100%;
     text-align: center;
-    margin: 6px 0;
+    font-size: 14px;
+    padding: 12px;
+    white-space: normal;
+    word-wrap: break-word;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 15px;
   }
 
   .Add-container {
-    padding: 20px 15px;
+    padding: 15px;
+  }
+
+  nav a {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .Add-container form input[type="submit"] {
+    font-size: 15px;
+    padding: 10px 16px;
   }
 }
