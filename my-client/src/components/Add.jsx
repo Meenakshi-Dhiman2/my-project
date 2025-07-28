@@ -25,7 +25,7 @@ export default function Add(){
     }
     return (
         <div className="Add-container">
-            <h1>Employee Details</h1>
+            <h1>Add Record Screen</h1>
             <form onSubmit={addHandler}>
                 
                 <input
