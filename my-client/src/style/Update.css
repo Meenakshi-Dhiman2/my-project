@@ -1,0 +1,55 @@
+/* Update1.css */
+
+.update-container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  margin: 30px auto;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.update-container h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.update-container hr {
+  border: 0;
+  height: 1px;
+  background: #e0e0e0;
+  margin-bottom: 25px;
+}
+
+.update-container form input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.update-container form input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.update-container form button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.update-container form button:hover {
+  background-color: #2c3e50;
+}

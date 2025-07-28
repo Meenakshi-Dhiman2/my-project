@@ -1,0 +1,54 @@
+/* Delete.css */
+
+.Delete-container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  margin: 30px auto;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.Delete-container h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.Delete-container hr {
+  border: 0;
+  height: 1px;
+  background: #e0e0e0;
+  margin-bottom: 25px;
+}
+
+.Delete-container input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.Delete-container input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.Delete-container button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.Delete-container button:hover {
+  background-color: #3498db;
+}

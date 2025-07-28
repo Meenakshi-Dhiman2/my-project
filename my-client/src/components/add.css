@@ -1,0 +1,49 @@
+
+
+.Add-container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  margin: 30px auto;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.Add-container h1 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+.Add-container form input[type="text"],
+.Add-container form input[type="salary"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.Add-container form input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.Add-container form input[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.Add-container form input[type="submit"]:hover {
+  background-color: #2c3e50;
+}
