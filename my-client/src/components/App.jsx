@@ -29,7 +29,7 @@ function App() {
 
       </Routes>
       <footer>
-        <p>© 2025 Made By Meenakshi</p>
+        <p>© 2025 Employee Management System All right reserved</p>
       </footer>
        
     </div>
