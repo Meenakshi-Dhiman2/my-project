@@ -2,24 +2,25 @@ import axios from "axios";
 import { useState } from "react";
 import '../style/Update.css';
 
-function Update1 (){
+function Update() {
   const [id, setId] = useState("");
   const [empNo, setNo] = useState("");
   const [empName, setName] = useState("");
   const [empSal, setSal] = useState("");
 
+  const BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
   async function updateHandler(e) {
     e.preventDefault();
     try {
-      const response = await axios.put(`http://localhost:3000/api/employees/${id}`, {
+      const response = await axios.put(`${BASE_URL}/api/employees/${id}`, {
         empNo: Number(empNo),
         empName,
         empSal: Number(empSal),
       });
       alert(response.data.message);
     } catch (err) {
-      
-      alert(err);
+      alert("Update Failed: " + (err.response?.data?.message || err.message));
     }
   }
 
@@ -62,4 +63,4 @@ function Update1 (){
   );
 }
 
-export default Update1;
+export default Update;
